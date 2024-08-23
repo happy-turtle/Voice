@@ -15,6 +15,7 @@ import androidx.compose.material3.IconButton
 import androidx.compose.material3.ListItem
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.Switch
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberModalBottomSheetState
 import androidx.compose.runtime.Composable
@@ -33,6 +34,7 @@ fun SleepTimerDialog(
   onIncrementSleepTime: () -> Unit,
   onDecrementSleepTime: () -> Unit,
   onAcceptSleepTime: (Int) -> Unit,
+  onCheckAutoSleepTimer: (Boolean) -> Unit,
   modifier: Modifier = Modifier,
 ) {
   ModalBottomSheet(
@@ -83,6 +85,17 @@ fun SleepTimerDialog(
             }
           }
         },
+      )
+      ListItem(
+        headlineContent = {
+          Text(text = "AutoSleepTimer")
+        },
+        trailingContent = {
+          Switch(
+            checked = viewState.autoSleepTimer,
+            onCheckedChange = onCheckAutoSleepTimer
+          )
+        }
       )
       Spacer(modifier = Modifier.size(32.dp))
     }

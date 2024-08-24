@@ -88,7 +88,7 @@ fun SleepTimerDialog(
       )
       ListItem(
         headlineContent = {
-          Text(text = "AutoSleepTimer")
+          Text(text = stringResource(id = StringsR.string.sleep_timer_auto_start))
         },
         trailingContent = {
           Switch(

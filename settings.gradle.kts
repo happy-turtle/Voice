@@ -31,7 +31,7 @@ dependencyResolutionManagement {
 }
 
 plugins {
-  id("com.gradle.develocity") version "3.17.6"
+  id("com.gradle.develocity") version "3.18.2"
   id("org.gradle.toolchains.foojay-resolver-convention") version ("0.8.0")
 }
 
@@ -45,6 +45,7 @@ develocity {
 include(":app")
 include(":strings")
 include(":common")
+include(":bookmark")
 include(":data")
 include(":playback")
 include(":ffmpeg")

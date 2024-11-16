@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="cover">Cover</string>
-    <string name="play_pause">Play / Pause</string>
+    <string name="cover">Titelbild</string>
+    <string name="play_pause">Abspielen / Pausieren</string>
     <string name="action_sleep">Einschlaf-Timer</string>
     <string name="rewind">Zurückspulen</string>
     <string name="fast_forward">Vorspulen</string>
     <string name="previous_track">Vorheriger Track</string>
-    <string name="next_track">Nächster Track</string>
+    <string name="next_track">Nächster Titel</string>
     <string name="skip_silence">Stille überspringen</string>
-    <string name="volume_boost">Lautstärke Boost</string>
+    <string name="volume_boost">Lautstärke erhöhen</string>
     <string name="more">Mehr</string>
     <string name="dialog_confirm">Okay</string>
     <string name="dialog_cancel">Abbrechen</string>
-    <string name="content_cover">Zeigt aktuelles Cover an</string>
+    <string name="content_cover">Zeigt aktuelles Titelbild an</string>
     <string name="change_book_name">Name</string>
-    <string name="download_book_cover">Cover (Internet)</string>
-    <string name="pick_book_cover">Cover (Lokal)</string>
+    <string name="download_book_cover">Titelbild aus dem Internet</string>
+    <string name="pick_book_cover">Titelbild aus dem Dateisystem</string>
     <string name="edit_book_title">Buch bearbeiten</string>
     <string name="mark_as_completed">Als \"Abgeschlossen\" markieren</string>
     <string name="mark_as_current">Als \"Aktuelles\" markieren</string>
     <string name="mark_as_not_started">Als \"Neu\" markieren</string>
     <string name="audiobook_folders_title">Hörbuch Ordner</string>
-    <string name="playback_speed">Geschwindigkeit</string>
+    <string name="playback_speed">Abspielgeschwindigkeit</string>
     <string name="bookmark">Lesezeichen</string>
     <string name="bookmark_edit_title">Lesezeichen bearbeiten</string>
     <string name="bookmark_edit_hint">Lesezeichenname</string>
@@ -41,7 +41,7 @@
     <string name="pref_get_support">Erhalte Unterstützung</string>
     <string name="pref_app_version">App Version</string>
     <string name="popup_edit">Bearbeiten</string>
-    <string name="remove">Löschen</string>
+    <string name="remove">Entfernen</string>
     <string name="play_current">Spiel aktuelles</string>
     <string name="book_header_current">Aktuelles</string>
     <string name="book_header_not_started">Neu</string>
@@ -90,12 +90,12 @@
     <string name="media_session_recent">Kürzlich</string>
     <string name="notification_sleep_timer_enable">Einschlaftimer einschalten</string>
     <string name="notification_sleep_timer_disable">Einschlaftimer ausschalten</string>
-    <string name="play">Play</string>
+    <string name="play">Abspielen</string>
     <string name="pause">Pause</string>
     <string name="generic_error_message">Etwas ist schief gelaufen 😢</string>
     <string name="generic_error_retry">Erneut versuchen</string>
-    <string name="cover_search_template_with_author">%1$s von %2$s Hörbuch cover</string>
-    <string name="cover_search_template_no_author">%s Hörbuch cover</string>
+    <string name="cover_search_template_with_author">%1$s von %2$s Hörbuch Titelbild</string>
+    <string name="cover_search_template_no_author">%s Hörbuch Titelbild</string>
     <string name="storage_bug_title">Berechtigung benötigt</string>
     <string name="storage_bug_subtitle">Für bestimmte Geräte fehlt einer System-App die notwendige Berechtigung, auf den externen Speicher zuzugreifen. Dieser Zugriff ist jedoch für Voice essentiell, um Ihre Hörbücher lesen zu können.</string>
     <string name="storage_bug_button">Berechtigung erteilen</string>
@@ -126,9 +126,9 @@
     <string name="sleep_timer.title">Schlaf gut! 🌙</string>
     <string name="sleep_timer.button.increment">Länger</string>
     <string name="sleep_timer.button.decrement">Kürzer</string>
+    <string name="sleep_timer_auto_start">Starte Timer beim Abspielen</string>
     <plurals name="minutes">
         <item quantity="one">%d Minute</item>
         <item quantity="other">%d Minuten</item>
     </plurals>
-    <string name="sleep_timer_auto_start">Starte Timer beim Abspielen</string>
 </resources>

@@ -12,6 +12,7 @@ import de.paulwoitaschek.flowpref.android.AndroidPreferences
 import de.paulwoitaschek.flowpref.android.boolean
 import de.paulwoitaschek.flowpref.android.enum
 import de.paulwoitaschek.flowpref.android.int
+import de.paulwoitaschek.flowpref.android.string
 import de.paulwoitaschek.flowpref.android.stringSet
 import kotlinx.serialization.builtins.ListSerializer
 import kotlinx.serialization.builtins.nullable
@@ -31,6 +32,7 @@ import voice.common.pref.RootAudiobookFolders
 import voice.common.pref.SingleFileAudiobookFolders
 import voice.common.pref.SingleFolderAudiobookFolders
 import voice.datastore.VoiceDataStoreFactory
+import java.time.LocalTime
 import javax.inject.Named
 import javax.inject.Singleton
 
@@ -83,6 +85,20 @@ object PrefsModule {
   @Named(PrefKeys.AUTO_SLEEP_TIMER)
   fun provideAutoSleepTimerPreference(prefs: AndroidPreferences): Pref<Boolean> {
     return prefs.boolean(PrefKeys.AUTO_SLEEP_TIMER, false)
+  }
+
+  @Provides
+  @Singleton
+  @Named(PrefKeys.AUTO_SLEEP_TIMER_START)
+  fun provideAutoSleepTimerStartPreference(prefs: AndroidPreferences): Pref<String> {
+    return prefs.string(PrefKeys.AUTO_SLEEP_TIMER_START, LocalTime.of(22, 0).toString())
+  }
+
+  @Provides
+  @Singleton
+  @Named(PrefKeys.AUTO_SLEEP_TIMER_END)
+  fun provideAutoSleepTimerEndPreference(prefs: AndroidPreferences): Pref<String> {
+    return prefs.string(PrefKeys.AUTO_SLEEP_TIMER_END, LocalTime.of(6, 0).toString())
   }
 
   @Provides

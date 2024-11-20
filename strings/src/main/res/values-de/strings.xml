@@ -126,9 +126,11 @@
     <string name="sleep_timer.title">Schlaf gut! 🌙</string>
     <string name="sleep_timer.button.increment">Länger</string>
     <string name="sleep_timer.button.decrement">Kürzer</string>
-    <string name="sleep_timer_auto_start">Starte Timer beim Abspielen</string>
+    <string name="auto_sleep_timer">Starte Schlummerfunktion automatisch</string>
     <plurals name="minutes">
         <item quantity="one">%d Minute</item>
         <item quantity="other">%d Minuten</item>
     </plurals>
+    <string name="auto_sleep_timer_start">Startzeit</string>
+    <string name="auto_sleep_timer_end">Endzeit</string>
 </resources>

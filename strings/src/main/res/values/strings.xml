@@ -128,5 +128,7 @@
         <item quantity="one">%d minute</item>
         <item quantity="other">%d minutes</item>
     </plurals>
-    <string name="sleep_timer_auto_start">Start timer on playback</string>
+    <string name="auto_sleep_timer">Start snooze timer on schedule</string>
+    <string name="auto_sleep_timer_start">Start time</string>
+    <string name="auto_sleep_timer_end">End time</string>
 </resources>
